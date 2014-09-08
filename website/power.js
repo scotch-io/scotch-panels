@@ -17,13 +17,13 @@ $(function() {
     });
 
     $('#direction-content-html-panel').scotchPanel({
-        containerSelector: '.content',
+        containerSelector: '#direction-content .content',
         direction: 'left',
         clickSelector: '#direction-content .arrows .left, .toggle-direction-content-html',
         touchSelector: '#direction-content .arrows .left, .toggle-direction-content-html'
     });
     $('#direction-content-iframe-panel').scotchPanel({
-        containerSelector: '.content',
+        containerSelector: '#direction-content .content',
         direction: 'top',
         type: 'iframe',
         iframeURL: 'http://scotch.io',
@@ -31,7 +31,7 @@ $(function() {
         touchSelector: '#direction-content .arrows .top, .toggle-direction-content-iframe'
     });
     $('#direction-content-image-panel').scotchPanel({
-        containerSelector: '.content',
+        containerSelector: '#direction-content .content',
         direction: 'bottom',
         type: 'image',
         imageURL: 'http://scotch.io/wp-content/themes/scotch-twentyfive/img/about-holly.jpg',
@@ -39,7 +39,7 @@ $(function() {
         touchSelector: '#direction-content .arrows .bottom, .toggle-direction-content-image'
     });
     $('#direction-content-video-panel').scotchPanel({
-        containerSelector: '.content',
+        containerSelector: '#direction-content .content',
         direction: 'right',
         type: 'video',
         youtubeID: 'ePbKGoIGAXY',

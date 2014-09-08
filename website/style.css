@@ -925,11 +925,6 @@ a.toggle-nested-demo i {
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
-
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px) {
         #any-container .col-md-4 {
             margin-bottom: 15px;
         }
@@ -940,6 +935,10 @@ a.toggle-nested-demo i {
             margin-top: 0;
             margin-bottom: 0;
         }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
         #call-to-action h1 {
             font-size: 85px;
         }
