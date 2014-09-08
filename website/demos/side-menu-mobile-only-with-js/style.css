@@ -1,0 +1,101 @@
+/*==================================
+=            SITE STUFF            =
+==================================*/
+a {
+    text-decoration: none !important;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+}
+header {
+    position: relative;
+    background: #222;
+    height: 50px;
+}
+header a {
+    color: #777;
+}
+header a:hover {
+    color: #fff;
+}
+header .logo {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+header .toggle-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #333;
+
+    display: none;
+}
+header ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+}
+article {
+    height: 5000px;
+}
+
+
+
+/*====================================
+=            PANEL STYLES            =
+====================================*/
+#scotch-panel {
+    background: #444;
+}
+#scotch-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#scotch-panel ul li a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: transparent;
+    color: #fff;
+}
+#scotch-panel ul li a:hover {
+    background: #555;
+}
+
+
+
+
+
+
+
+
+/*=======================================
+=            MOBILE SNIPPETS            =
+=======================================*/
+@media only screen and (max-width : 768px) {
+    header .toggle-panel {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+}

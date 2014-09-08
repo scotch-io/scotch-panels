@@ -1,0 +1,103 @@
+/*==================================
+=            SITE STUFF            =
+==================================*/
+a {
+    text-decoration: none !important;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+}
+header {
+    position: relative;
+    background: #222;
+    height: 50px;
+}
+header a {
+    color: #777;
+}
+header a:hover {
+    color: #fff;
+}
+header .logo {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+header .toggle-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #333;
+}
+article {
+    height: 5000px;
+}
+
+
+
+
+/*====================================
+=            PANEL STYLES            =
+====================================*/
+/* Forces use of GPU since this is somewhat resource intensive */
+.scotchified {
+    -o-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+/* Force Height of Panel for unique use case */
+.scotch-panel-wrapper {
+    height: 100%;
+}
+#scotch-panel {
+    background: #444;;
+}
+#scotch-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#scotch-panel ul li a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: transparent;
+    color: #fff;
+}
+#scotch-panel ul li a:hover {
+    background: #555;
+}
+#scotch-panel ul li a.toggle-inside-panel {
+    background: #46AAF2;
+}
+#scotch-panel ul li a.toggle-inside-panel:hover {
+    background: #62BDFF;
+}
+
+#inside-panel {
+    background: #2D7DB6;
+    padding: 0 30px;
+}
+#inside-panel h2 {
+    padding-top: 30px;
+}
+#inside-panel form {
+    padding-bottom: 30px;
+}
+#inside-panel form {
+    position: relative;
+}
+#inside-panel .toggle-inside-panel {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+}

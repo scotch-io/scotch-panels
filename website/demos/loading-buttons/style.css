@@ -1,0 +1,97 @@
+/*==================================
+=            SITE STUFF            =
+==================================*/
+a {
+    text-decoration: none !important;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+}
+header {
+    position: relative;
+    background: #222;
+    height: 50px;
+}
+header a {
+    color: #777;
+}
+header a:hover {
+    color: #fff;
+}
+header .logo {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+header .toggle-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #333;
+}
+section {
+    padding-bottom: 5000px;
+}
+
+
+
+
+.scotch-button {
+    position: relative;
+    outline: none !important;
+    display: inline-block;
+    overflow: hidden;
+    background: #666;
+    border: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #fff !important;
+    padding: 0 !important;
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.scotch-button span.text {
+    padding: 0 18px;
+}
+.scotch-button span {
+    height: 50px;
+    line-height: 50px;
+}
+
+
+
+.example-1 { background: #118B4B; }
+.example-1 .scotch-panel-canvas { background: #2aca76; }
+.example-1:hover .scotch-panel-canvas { background: #38d683; }
+
+.example-2 { background: #8A472A; }
+.example-2 .scotch-panel-canvas { background: #ea8557; }
+.example-2:hover .scotch-panel-canvas { background: #ed956e; }
+
+.example-3 span {
+    height: 50px;
+    line-height: 50px;
+    display: block;
+}
+.example-3 { background: #A5DCF6; }
+.example-3 .scotch-panel-canvas { background: #53b5e6; }
+.example-3:hover .scotch-panel-canvas { background: #69bfe9; }
+
+.example-4 span {
+    height: 50px;
+    line-height: 50px;
+    display: block;
+}
+.example-4 { background: #502B79; }
+.example-4 .scotch-panel-canvas { background: #9973c2; }
+.example-4:hover .scotch-panel-canvas { background: #a685ca; }

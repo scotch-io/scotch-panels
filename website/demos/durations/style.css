@@ -1,0 +1,68 @@
+/*==================================
+=            SITE STUFF            =
+==================================*/
+body {
+    padding-bottom: 500px;
+}
+a {
+    text-decoration: none !important;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+}
+header {
+    position: relative;
+    background: #222;
+    height: 50px;
+}
+header a {
+    color: #777;
+}
+header a:hover {
+    color: #fff;
+}
+header .logo {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+header .toggle-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #333;
+}
+
+
+
+
+main {
+    margin: 100px 0;
+}
+section {
+    background: #efefef;
+    text-align: center;
+    cursor: pointer;
+    margin: 15px 0;
+}
+section h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+
+
+/*====================================
+=            PANEL STYLES            =
+====================================*/
+.scotch-panel {
+    background: #444;;
+}
+.scotch-panel h2 {
+    color: #fff;
+}

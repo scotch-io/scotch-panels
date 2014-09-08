@@ -1,0 +1,996 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/Product" id="ie6" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie7" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie8" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 9 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie9" class="ie" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 9]><!--><html itemscope itemtype="http://schema.org/Product" lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+
+	<!-- Meta -->
+    <meta charset="utf-8">
+	<!--
+       d888888o.       ,o888888o.        ,o888888o. 8888888 8888888888 ,o888888o.    8 8888        8
+     .`8888:' `88.    8888     `88.   . 8888     `88.     8 8888      8888     `88.  8 8888        8
+     8.`8888.   Y8 ,8 8888       `8. ,8 8888       `8b    8 8888   ,8 8888       `8. 8 8888        8
+     `8.`8888.     88 8888           88 8888        `8b   8 8888   88 8888           8 8888        8
+      `8.`8888.    88 8888           88 8888         88   8 8888   88 8888           8 8888        8
+       `8.`8888.   88 8888           88 8888         88   8 8888   88 8888           8 8888        8
+        `8.`8888.  88 8888           88 8888        ,8P   8 8888   88 8888           8 8888888888888
+    8b   `8.`8888. `8 8888       .8' `8 8888       ,8P    8 8888   `8 8888       .8' 8 8888        8
+    `8b.  ;8.`8888    8888     ,88'   ` 8888     ,88'     8 8888      8888     ,88'  8 8888        8
+     `Y8888P ,88P'     `8888888P'        `8888888P'       8 8888       `8888888P'    8 8888        8
+
+    8 888888888o      .8.          b.             8 8 8888888888   8 8888           d888888o.
+    8 8888    `88.   .888.         888o.          8 8 8888         8 8888         .`8888:' `88.
+    8 8888     `88  :88888.        Y88888o.       8 8 8888         8 8888         8.`8888.   Y8
+    8 8888     ,88 . `88888.       .`Y888888o.    8 8 8888         8 8888         `8.`8888.
+    8 8888.   ,88'.8. `88888.      8o. `Y888888o. 8 8 888888888888 8 8888          `8.`8888.
+    8 888888888P'.8`8. `88888.     8`Y8o. `Y88888o8 8 8888         8 8888           `8.`8888.
+    8 8888      .8' `8. `88888.    8   `Y8o. `Y8888 8 8888         8 8888            `8.`8888.
+    8 8888     .8'   `8. `88888.   8      `Y8o. `Y8 8 8888         8 8888        8b   `8.`8888.
+    8 8888    .888888888. `88888.  8         `Y8o.` 8 8888         8 8888        `8b.  ;8.`8888
+    8 8888   .8'       `8. `88888. 8            `Yo 8 888888888888 8 888888888888 `Y8888P ,88P'
+	-->
+	<title>Scotch Panels ♥ jQuery Off Canvas Menus and Panels Plugin</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="http://scotch.io/favicon.ico">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Lato:300,400,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
+    <link rel="stylesheet" href="style.css">
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- SEO -->
+	<meta name="author" content="Nicholas Cerminara">
+	<meta name="description" content="Scotch Panels is a jQuery Plugin for easily building CSS3 off canvas menus, navigations, and panels.">
+	<link rel="canonical" href="http://panels.scotch.io">
+
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@scotch_io">
+    <meta name="twitter:creator" content="ncerminara">
+    <meta name="twitter:title" content="Scotch Panels ♥ jQuery Off Canvas Menus and Panels Plugin">
+    <meta name="twitter:description" content="Scotch Panels is a jQuery Plugin for easily building CSS3 off canvas menus, navigations, and panels.">
+    <meta name="twitter:image:src" content="">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="fb:admins" content="579622216,709634581">
+    <meta property="fb:app_id" content="1389892087910588">
+    <meta property="og:url" content="http://panels.scotch.io">
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Scotch Panels ♥ jQuery Off Canvas Menus and Panels Plugin">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Scotch Panels is a jQuery Plugin for easily building CSS3 off canvas menus, navigations, and panels.">
+    <meta property="og:site_name" content="Scotch">
+    <meta property="article:author" content="https://www.facebook.com/NCerminara">
+    <meta property="article:publisher" content="https://www.facebook.com/scotchdevelopment">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="Scotch Panels ♥ jQuery Off Canvas Menus and Panels Plugin">
+    <meta itemprop="description" content="Scotch Panels is a jQuery Plugin for easily building CSS3 off canvas menus, navigations, and panels.">
+    <meta itemprop="image" content="">
+
+
+</head>
+<body>
+
+    <nav id="main-nav" class="make-me-a-panel" data-direction="right" data-distanceX="225px" data-clickSelector=".toggle-nav" data-touchSelector=".toggle-nav">
+
+        <div id="nested-demo">
+            <a href="#"><i class="fa fa-bug"></i> Found a bug?</a>
+            <a href="http://twitter.com/nickforthought"><i class="fa fa-ambulance"></i> Need extra help?</a>
+            <a href="#"><i class="fa fa-star"></i> Star on GitHub</a>
+        </div>
+
+        <a href="#" class="toggle-nested-demo">Nested Demo <i class="fa fa-angle-up"></i></a>
+        <a href="http://scotch.io" target="_blank">scotch scotch scotch</a>
+        <a href="#"><i class="fa fa-beer"></i> Commericial use</a>
+        <a href="#"><i class="fa fa-github"></i> GitHub</a>
+        <a href="#"><i class="fa fa-cloud-download"></i> Download</a>
+        <a href="#" target="_blank"><i class="fa fa-twitter"></i> @nickforthought</a>
+    </nav>
+
+    <header id="call-to-action">
+        <a href="#" class="toggle-nav">
+            <span class="demo">Click for demo <i class="fa fa-arrow-right"></i></span>
+            <span class="burger-x"></span>
+        </a>
+        <div class="hero center-hack">
+            <h1><img src="https://scotch.io/wp-content/themes/scotch-twentyfive/img/scotch-logo.png"> Panels</h1>
+            <p>jQuery <span>Off Canvas</span> Menus and Panels Plugin</p>
+            <button class="btn btn-block download download-only">
+                <span class="button-panel" data-hoverSelector="#call-to-action button.download-only">
+                    Off Canvas buttons, too
+                </span>
+                <span class="text">
+                    <i class="fa fa-cloud-download"></i> Download
+                </span>
+            </button>
+            <button class="btn btn-block download github-only">
+                <span class="button-panel" data-hoverSelector="#call-to-action button.github-only" data-direction="right">
+                    Fork, Pull, Issues
+                </span>
+                <span class="text">
+                    <i class="fa fa-github"></i> GitHub
+                </span>
+            </button>
+            <small>Looking for a <a href="#">Commercial License</a>?</small>
+        </div>
+        <a href="#" class="more center-hack">
+            <span>Over 30 easy to understand demos!</span>
+            <i class="fa fa-angle-down"></i>
+        </a>
+    </header>
+
+
+    <section id="licenses">
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-8 col-md-offset-2 content">
+                    <h2>Licenses</h2>
+
+                    <p class="lead"><strong>TL:DR;</strong> If you or your company is making money from the project you want to use this with, please buy a license.</p>
+
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Personal</td>
+                                <td><strong>$0 (free)</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Commercial (1 site)</td>
+                                <td>$15</td>
+                            </tr>
+                            <tr>
+                                <td>Commercial (Unlimited Sites)</td>
+                                <td>$60</td>
+                            </tr>
+                            <tr>
+                                <td>Extended License (reselling)</td>
+                                <td>Contact me: <a href="mailto:nick@scotch.io">nick@scotch.io</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><a href="#" class="btn btn-block btn-lg btn-danger">Purchase a License</a></p>
+
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="direction-content">
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-8 col-md-offset-2 content">
+                    <h2>From Any Direction</h2>
+                    <p class="lead">with any type content</p>
+                    <div class="arrows clearfix">
+                            <a href="#" class="left">
+                            <i class="fa fa-arrow-circle-o-left"></i>
+                            <span>HTML</span>
+                        </a>
+                        <a href="#" class="top">
+                            <i class="fa fa-arrow-circle-o-up"></i>
+                            <span>Iframes</span>
+                        </a>
+                        <a href="#" class="bottom">
+                            <i class="fa fa-arrow-circle-o-down"></i>
+                            <span>Images</span>
+                        </a>
+                        <a href="#" class="right">
+                            <i class="fa fa-arrow-circle-o-right"></i>
+                            <span>Videos</span>
+                        </a>
+                    </div>
+                    <div id="direction-content-html-panel">
+                        <form action="" method="POST" role="form">
+                            <legend>Join the Justice League</legend>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="" placeholder="Your civilian alias">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="" placeholder="Your super email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="" placeholder="Your top secret password">
+                            </div>
+                            <div class="buttons clearfix">
+                                <button type="submit" class="btn btn-primary">Join Now</button>
+                                <a href="#" class="btn btn-danger toggle-direction-content-html"><i class="fa fa-times"></i> Eh, I'll save the world later.</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="direction-content-iframe-panel">
+                        <span class="loader"></span>
+                        <a href="#" class="btn btn-danger btn-block toggle-direction-content-iframe">I <i class="fa fa-heart"></i> that blog! Just now now... <i class="fa fa-times"></i></a>
+                    </div>
+                    <div id="direction-content-image-panel">
+                        <a href="#" class="btn btn-danger btn-block toggle-direction-content-image">Great photo Holly! <i class="fa fa-times"></i></a>
+                    </div>
+                    <div id="direction-content-video-panel">
+                         <a href="#" class="btn btn-danger btn-xs toggle-direction-content-video">I've seen this <i class="fa fa-times"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="any-container">
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-8 col-md-offset-2 content">
+                    <h2>In any container</h2>
+                    <p class="lead">You can have the Scotch Panel come out of any container that you choose. Don't forget to specify your container when initiating otherwise it will default to the <code>body</code> tag.</p>
+                    <p class="lead">It's best practice to just always specify the container. It will always default to the <strong>nearest parent</strong> of the selector you use.</p>
+                 </div>
+            </div>
+            <div class="row events">
+                <div class="col-md-4">
+                    <div class="wrap click-content-helper">
+                        <div class="content-helper-panel click" data-clickSelector=".click-content-helper" data-hoverSelector=" " data-touchSelector=" "><i class="fa fa-heart center-hack"></i></div>
+                        <h3>Click</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wrap hover-content-helper">
+                        <div class="content-helper-panel hover" data-clickSelector=" " data-hoverSelector=".hover-content-helper" data-touchSelector=" "><i class="fa fa-heart center-hack"></i></div>
+                        <h3>Hover</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wrap touch-content-helper">
+                        <div class="content-helper-panel touch" data-clickSelector=".touch-content-helper" data-hoverSelector=" " data-touchSelector=".touch-content-helper"><i class="fa fa-heart center-hack"></i></div>
+                        <h3>Touch (Mobile Fast Click)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="any-style">
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-8 col-md-offset-2 content">
+                    <h2>Use CSS3 Transitions at any speed</h2>
+                    <p class="lead">Specify a transition and a speed to customize your panel. The default values our my personal favorite of 300ms and the "ease" CSS3 transition.</p>
+                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4">
+                    <div class="wrap transitions linear-example">
+                        <div class="transition-example linear" data-hoverSelector=".linear-example" data-transition="linear"><i class="fa fa-heart center-hack"></i></div>
+                        <h3>Linear Example</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="wrap transitions ease-example">
+                        <div class="transition-example ease" data-hoverSelector=".ease-example" data-transition="ease"><i class="fa fa-heart center-hack"></i></div>
+                        <h3>Ease Example</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="wrap transitions ease-in-example">
+                        <div class="transition-example ease-in" data-hoverSelector=".ease-in-example" data-transition="ease-in"><i class="fa fa-heart center-hack"></i></div>
+                        <h3>Ease-in Example</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="wrap transitions ease-out-example">
+                        <div class="transition-example ease-out" data-hoverSelector=".ease-out-example" data-transition="ease-out"><i class="fa fa-heart center-hack"></i></div>
+                        <h3>Ease-out Example</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="wrap transitions ease-in-out-example">
+                        <div class="transition-example ease-in-out" data-hoverSelector=".ease-in-out-example" data-transition="ease-in-out"><i class="fa fa-heart center-hack"></i></div>
+                        <h3>Ease-in-out Example</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="wrap transitions cubic-example">
+                        <div class="transition-example cubic-bezier" data-hoverSelector=".cubic-example" data-transition="cubic-bezier(.61,-0.67,0,1.45)"><i class="fa fa-heart center-hack"></i></div>
+                        <h3>cubic-bezier</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="wrap durations duration-0">
+                        <div class="duration-example ms-0" data-hoverSelector=".duration-0" data-duration="0"><i class="fa fa-heart center-hack"></i></div>
+                        <h3>0ms</h3>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="wrap durations duration-200">
+                        <div class="duration-example ms-200" data-hoverSelector=".duration-200" data-duration="200"><i class="fa fa-heart center-hack"></i></div>
+                        <h3>200ms</h3>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="wrap durations duration-600">
+                        <div class="duration-example ms-600" data-hoverSelector=".duration-600" data-duration="600"><i class="fa fa-heart center-hack"></i></div>
+                        <h3>600ms</h3>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="wrap durations duration-1500">
+                        <div class="duration-example ms-1500" data-hoverSelector=".duration-1500" data-duration="1500"><i class="fa fa-heart center-hack"></i></div>
+                        <h3>1.5s</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 content">
+                    <h2>Dead Simple Demos</h2>
+                    <p class="lead"><strong>Stripped and naked</strong> so you it's easier for you to repurpose</p>
+
+                    <h3>Getting Started</h3>
+                    <ul>
+                        <li><a href="demos/side-menu-easy-way/index.html" target="_blank">Side Menu / Navigation (The Easy Way)</a></li>
+                        <li><a href="demos/side-menu-html5-way/index.html" target="_blank">Side Menu / Navigation (The HTML5 Way)</a></li>
+                        <li><a href="demos/side-menu-dev-way/index.html" target="_blank">Side Menu / Navigation (The Dev Way)</a></li>
+                    </ul>
+
+                    <h3>Mobile Only</h3>
+                    <ul>
+                        <li><a href="demos/side-menu-mobile-only-with-css/index.html" target="_blank">Side Menu / Navigation only (with CSS)</a></li>
+                        <li><a href="demos/side-menu-mobile-only-with-js/index.html" target="_blank">Side Menu / Navigation only (with JS)</a></li>
+                    </ul>
+
+                    <h3>Horizontal</h3>
+                    <ul>
+                        <li><a href="demos/horizontal-fixed-width/index.html" target="_blank">Horizontal Fixed Width</a></li>
+                        <li><a href="demos/horizontal-percentage-width/index.html" target="_blank">Horizontal Percentage Width</a></li>
+                    </ul>
+
+                    <h3>Vertical</h3>
+                    <ul>
+                        <li><a href="demos/vertical-min-height/index.html" target="_blank">Vertical Forced Min Height</a></li>
+                    </ul>
+
+                    <h3>Content Helpers</h3>
+                    <ul>
+                        <li><a href="demos/html-example/index.html" target="_blank">HTML Example</a></li>
+                        <li><a href="demos/iframe-example-no-loader/index.html" target="_blank">Iframe Example (no loader)</a></li>
+                        <li><a href="demos/iframe-example-with-loader/index.html" target="_blank">Iframe Example (with loader)</a></li>
+                        <li><a href="demos/photo-example/index.html" target="_blank">Photo Example</a></li>
+                        <li><a href="demos/video-example/index.html" target="_blank">Video Example</a></li>
+                    </ul>
+
+                    <h3>Event Helpers</h3>
+                    <ul>
+                        <li><a href="demos/click-helper/index.html" target="_blank">Click Helper</a></li>
+                        <li><a href="demos/hover-helper/index.html" target="_blank">Hover Helper</a></li>
+                        <li><a href="demos/touch-helper/index.html" target="_blank">Touch Helper (mobile fast click)</a></li>
+                    </ul>
+
+                    <h3>Styles</h3>
+                    <ul>
+                        <li><a href="demos/transitions/index.html" target="_blank">Transitions</a></li>
+                        <li><a href="demos/durations/index.html" target="_blank">Durations</a></li>
+                        <li><a href="demos/directions/index.html" target="_blank">Directions</a></li>
+                    </ul>
+
+                    <h3>Triggers</h3>
+                    <ul>
+                        <li><a href="demos/trigger-example/index.html" target="_blank">Trigger Example</a></li>
+                        <li><a href="demos/trigger-close-after-x/index.html" target="_blank">Trigger Example (close after "X" time)</a></li>
+                        <li><a href="demos/trigger-with-cookie/index.html" target="_blank">Trigger Example (with setting a cookie)</a></li>
+                    </ul>
+
+                    <h3>CSS Class Helpers</h3>
+                    <ul>
+                        <li><a href="demos/helper-classes/index.html" target="_blank">Helper Classes</a></li>
+                    </ul>
+
+                    <h3>Browser Suport</h3>
+                    <ul>
+                        <li><a href="demos/javascript-only/index.html" target="_blank">JavaScript Only</a></li>
+                        <li><a href="demos/javascript-only-with-easing/index.html" target="_blank">JavaScript Only (with Easing)</a></li>
+                    </ul>
+
+                    <h3>Multiple Panels at Once</h3>
+                    <ul>
+                        <li><a href="demos/multiple-panels/index.html" target="_blank">Multiple Panels</a></li>
+                        <li><a href="demos/multiple-panels-different-styles/index.html" target="_blank">Multiple Panels (different styles)</a></li>
+                        <li><a href="demos/multiple-panels-same-container/index.html" target="_blank">Multiple Panels (same container)</a></li>
+                    </ul>
+
+                    <h3>Advanced (cool things)</h3>
+                    <ul>
+                        <li><a href="demos/custom-slider/index.html" target="_blank">Custom Slider</a></li>
+                        <li><a href="demos/callbacks/index.html" target="_blank">Callbacks API</a></li>
+                        <li><a href="demos/loading-buttons/index.html" target="_blank">Loading Buttons</a></li>
+                        <li><a href="demos/nested-panels/index.html" target="_blank">Nested Panels</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 content">
+                    <h2>Other Features</h2>
+                    <ul>
+                        <li><h3>Uses CSS3 with JavaScript Fallback</h3></li>
+                        <li><h3>Fully Responsive</h3></li>
+                        <li><h3>Custom transition styles</h3></li>
+                        <li><h3>Completely Customizable with tons of optional settings</h3></li>
+                        <li><h3>Lightweight, easy to use, and only one file</h3></li>
+                        <li><h3>Cross Browser Support</h3></li>
+                        <li><h3>Open Source</h3></li>
+                        <li><h3>Choose either custom HTML, images, iframes, or video panels</h3></li>
+                        <li><h3>Optionally use HTM5 Data Attributes</h3></li>
+                        <li><h3>Off Canvas directions from top, Bottom, left, and right</h3></li>
+                        <li><h3>Works from any container or div</h3></li>
+                        <li><h3>Extensive Callbacks API</h3></li>
+                        <li><h3>Click, touch, hover, and keyboard helpers</h3></li>
+                        <li><h3>CSS Class Helpers</h3></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="easy-way" class="getting-started">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 content">
+                    <h2>Getting Started The Easy Way</h2>
+                    <h3>jQuery for the Win!</h3>
+                    <h4>Step 1: Add scotchPanel.js</h4>
+                    <p>After jQuery, add the scotchPanel.js file.</p>
+                    <pre class="language-markup"><code>&lt;script src="http://example.com/js/scotchPanels.js"&gt;</code></pre>
+
+                    <h4>Step 2: Pick the Container</h4>
+                    <p>Decide on the container that you want your Panel to come out of. Try to pick a container that doesn't have any padding in the direction of where the Panel will be coming out of.</p>
+
+                    <h4>Step 3: Add Your Panel's Markup inside of that Container</h4>
+                    <p>You'll want to add this markup inside of that <strong>container</strong>. If you are building a side navigation, put this directly below the opening body tag. If you want your panel inside of a custom div or wrapper, put it inside of that div.</p>
+
+    <pre class="language-markup"><code>&lt;div id="panel-example"&gt;
+    &lt;h2&gt;Whatever you want in your panel&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, blanditiis.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h4>Step 3: Add a button to toggle the Panel</h4>
+                    <p>This demo is showing how to create a click event, but you can tie opening and closing toggles to whatever events you want.</p>
+    <pre class="language-markup"><code>&lt;a href="#" class="toggle-panel"&gt;Toggle Panel&lt;/a&gt;</code></pre>
+
+                    <h4>Step 4: Initialize and Configure</h4>
+                    <p>In either a JavaScript file or inline, initalize the Panel. This has to be below the scotchPanel.js file. Some of the following settings below are defaults, and are only added for demonstration purposes.</p>
+    <pre class="language-javascript"><code>$('#panel-example').scotchPanel({
+    containerSelector: 'body', // As a jQuery Selector
+    direction: 'left', // Make it toggle in from the left
+    duration: 300, // Speed in ms how fast you want it to be
+    transition: 'ease', // CSS3 transition type: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(P1x,P1y,P2x,P2y)
+    clickSelector: '.toggle-panel', // Enables toggling when clicking elements of this class
+    distanceX: '70%', // Size fo the toggle
+    enableEscapeKey: true // Clicking Esc will close the panel
+});</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="dev-way" class="getting-started">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 content">
+                    <h2>Getting Started The Dev Way</h2>
+                    <h3>It's all about JavaScript Objects</h3>
+
+                    <h4>Step 1: Add scotchPanel.js</h4>
+                    <p>Feel free to use a front-end pakage manager like Bower.</p>
+                    <pre class="language-markup"><code>&lt;script src="http://example.com/js/scotchPanels.js"&gt;</code></pre>
+
+
+                    <h4>Step 2: Add Your Panel's Markup</h4>
+                    <p>Make sure this is inside of the container you want this to slide out of.</p>
+    <pre class="language-markup"><code>&lt;div id="panel-example"&gt;
+    &lt;h2&gt;Whatever you want in your panel&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, blanditiis.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h4>Step 3: Initialize, configure, and return</h4>
+                    <p>This is very similar to the easy way, except you'll be returning the function as an object to be able to integrate into your front-end code and logic.</p>
+    <pre class="language-javascript"><code>var panelExample = $('#panel-example').scotchPanel({
+    containerSelector: 'body', // Make this appear on the entire screen
+    direction: 'left', // Make it toggle in from the left
+    duration: 300, // Speed in ms how fast you want it to be
+    transition: 'ease', // CSS3 transition type: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(P1x,P1y,P2x,P2y)
+    clickSelector: '.toggle-panel', // Enables toggling when clicking elements of this class
+    distanceX: '70%', // Size fo the toggle
+    enableEscapeKey: true // Clicking Esc will close the panel
+});</code></pre>
+
+                    <h4>Step 4: Do dev things</h4>
+                    <p>You can now open, close, and toggle the panel however you want. You have full control to tie it to whatever events you want.</p>
+    <pre class="language-javascript"><code>panelExample.open() // Opens the Panel
+panelExample.toggle() // Toggles the Panel
+panelExample.close() // Closes the Panel
+</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="html5-way" class="getting-started">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 content">
+                    <h2>Getting Started the HTML5 Way</h2>
+                    <h3>It's all about Data Attributes</h3>
+
+                    <h4>Step 1: Add scotchPanel.js</h4>
+                    <p>After jQuery, add the scotchPanel.js file.</p>
+                    <pre class="language-markup"><code>&lt;script src="http://example.com/js/scotchPanels.js"&gt;</code></pre>
+
+
+                    <h4>Step 2: Add Your Panel's Markup with HTML5 Data Attribtues</h4>
+                    <p>Add the configuration options as data-attributes to your markup</p>
+
+    <pre class="language-markup"><code>&lt;div id="lefty" class="panelize-meeeee" data-containerSelector="body" data-direction="left" data-clickSelector=".toggle-panel-1"&gt;
+    &lt;h2&gt;Whatever you want in your panel&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, blanditiis.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="righty" class="panelize-meeeee" data-containerSelector="body" data-direction="right" data-clickSelector=".toggle-panel-2"&gt;
+    &lt;h2&gt;Whatever you want in your panel&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, blanditiis.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+
+                    <h4>Step 3: Add Toggle Buttons</h4>
+                    <p>Or other events to toggle the Scotch Panels.</p>
+    <pre class="language-markup"><code>&lt;a href="#" class="toggle-panel-1"&gt;Toggle Panel 1&lt;/a&gt;
+&lt;a href="#" class="toggle-panel-2"&gt;Toggle Panel 2&lt;/a&gt;</code></pre>
+
+                    <h4>Step 4: Initialize and Configure</h4>
+                    <pre class="language-javascript"><code>// Minimum Required Initiation of Panel
+/* $('.panlize-meeeee').scotchPanel(); */
+
+// Combination of Data Attributes and Options
+$('.panelize-meeeee').scotchPanel({
+    direction: 'top', // Will be overwritten by the Data Attributes
+    duration: 150 // Will apply to both
+});
+
+</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="options">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 content">
+
+                    <h2>Options</h2>
+
+                    <h3>General</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Default</th>
+                                <th>Options</th>
+                                <th>HTML5 Data Attribute</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>containerSelector</td>
+                                <td>body</td>
+                                <td>Any <a href="http://api.jquery.com/category/selectors/">jQuery selector</a> (e.g.: #some-id, .a-class, element). <strong>Selects the nearest parent.</strong></td>
+                                <td>data-containerSelector="body"</td>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>html</td>
+                                <td>html, iframe, video, image</td>
+                                <td>data-type="html"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Styles</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Default</th>
+                                <th>Options</th>
+                                <th>HTML5 Data Attribute</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>direction</td>
+                                <td>top</td>
+                                <td>top, left, right, bottom</td>
+                                <td>data-direction="top"</td>
+                            </tr>
+                            <tr>
+                                <td>duration</td>
+                                <td>300</td>
+                                <td>Any amount in ms</td>
+                                <td>data-duration="300"</td>
+                            </tr>
+                            <tr>
+                                <td>transition</td>
+                                <td>ease</td>
+                                <td>linear, ease, ease-in, ease-out, ease-in-out, <a href="http://cubic-bezier.com">cubic-bezier(P1x,P1y,P2x,P2y)</a></td>
+                                <td>data-transition="ease"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h3>Browser Support</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Default</th>
+                                <th>Options</th>
+                                <th>HTML5 Data Attribute</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>easingPluginTransition</td>
+                                <td>easeInCirc</td>
+                                <td>Must include <a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing</a></td>
+                                <td>data-easingPluginTransition="easeInCirc"</td>
+                            </tr>
+                            <tr>
+                                <td>useCSS</td>
+                                <td>true</td>
+                                <td>false / true</td>
+                                <td>data-useCSS="true"</td>
+                            </tr>
+                            <tr>
+                                <td>useEasingPlugin</td>
+                                <td>false</td>
+                                <td>Must set this to true when using <a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing</td>
+                                <td>data-useEasingPlugin="true"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Image Options</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Default</th>
+                                <th>Options</th>
+                                <th>HTML5 Data Attribute</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>imageURL</td>
+                                <td>false</td>
+                                <td>Type must be set to "image": false / true</td>
+                                <td>data-imageURL="http://scotch.io/double-rainbow.jpeg"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Iframe Options</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Default</th>
+                                <th>Options</th>
+                                <th>HTML5 Data Attribute</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>iframeLoadOnOpen</td>
+                                <td>true</td>
+                                <td>Type must be set to "iframe": false / true</td>
+                                <td>data-iframeLoadOnOpen="true"</td>
+                            </tr>
+                            <tr>
+                                <td>iframeURL</td>
+                                <td>false</td>
+                                <td>Type must be set to "iframe": http://example.com</td>
+                                <td>data-iframeURL="http://scotch.io"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Video Options</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Default</th>
+                                <th>Options</th>
+                                <th>HTML5 Data Attribute</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>autoPlayVideo</td>
+                                <td>true</td>
+                                <td>Type must be set to "video": false / true</td>
+                                <td>data-autoPlayVideo="true"</td>
+                            </tr>
+                            <tr>
+                                <td>youtubeID</td>
+                                <td>false</td>
+                                <td>Type must be set to "video": YouTube Video ID</td>
+                                <td>data-youtubeID="ztxuxc1l0Lo"</td>
+                            </tr>
+                            <tr>
+                                <td>youTubeTheme</td>
+                                <td>light</td>
+                                <td>Type must be set to "video": light / dark</td>
+                                <td>data-youTubeTheme="light"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h3>TranslateX Options</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Default</th>
+                                <th>Options</th>
+                                <th>HTML5 Data Attribute</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>distanceX</td>
+                                <td>70%</td>
+                                <td>Percentage or fixed width in pixels</td>
+                                <td>data-distanceX="70%"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h3>TranslateY Options</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Default</th>
+                                <th>Options</th>
+                                <th>HTML5 Data Attribute</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>forceMinHeight</td>
+                                <td>false</td>
+                                <td>false / true</td>
+                                <td>data-forceMinHeight="false"</td>
+                            </tr>
+                            <tr>
+                                <td>minHeight</td>
+                                <td>200px</td>
+                                <td>Any height</td>
+                                <td>data-minHeight="200px"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h3>Triggers</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Default</th>
+                                <th>Options</th>
+                                <th>HTML5 Data Attribute</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>closeAfter</td>
+                                <td>0</td>
+                                <td>Any amount in ms</td>
+                                <td>data-closeAfter="0"</td>
+                            </tr>
+                            <tr>
+                                <td>startOpened</td>
+                                <td>false</td>
+                                <td>false / true</td>
+                                <td>data-startOpened="false"</td>
+                            </tr>
+                            <tr>
+                                <td>startOpenedDelay</td>
+                                <td>0</td>
+                                <td>Any amount in ms</td>
+                                <td>data-startOpenedDelay="0"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h3>Event Helpers</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Default</th>
+                                <th>Options</th>
+                                <th>HTML5 Data Attribute</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>clickSelector</td>
+                                <td>false</td>
+                                <td>Any <a href="http://api.jquery.com/category/selectors/">jQuery selector</a> (e.g.: #some-id, .a-class, element)</td>
+                                <td>data-clickSelector=".toggle-panel"</td>
+                            </tr>
+                            <tr>
+                                <td>enableEscapeKey</td>
+                                <td>true</td>
+                                <td>false / true</td>
+                                <td>data-enableEscapeKey="true"</td>
+                            </tr>
+                            <tr>
+                                <td>hoverSelector</td>
+                                <td>false</td>
+                                <td>Any <a href="http://api.jquery.com/category/selectors/">jQuery selector</a> (e.g.: #some-id, .a-class, element)</td>
+                                <td>data-hoverSelector=".toggle-panel"</td>
+                            </tr>
+                            <tr>
+                                <td>touchSelector</td>
+                                <td>false</td>
+                                <td>Any <a href="http://api.jquery.com/category/selectors/">jQuery selector</a> (e.g.: #some-id, .a-class, element)</td>
+                                <td>data-touchSelector=".toggle-panel"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h3>Callbacks API</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Default</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>beforePanelOpen</td>
+                                <td>function() {}</td>
+                                <td>Any function or code you want.</td>
+                            </tr>
+                            <tr>
+                                <td>afterPanelOpen</td>
+                                <td>function() {}</td>
+                                <td>Any function or code you want.</td>
+                            </tr>
+                            <tr>
+                                <td>beforePanelClose</td>
+                                <td>function() {}</td>
+                                <td>Any function or code you want.</td>
+                            </tr>
+                            <tr>
+                                <td>afterPanelClose</td>
+                                <td>function() {}</td>
+                                <td>Any function or code you want.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h3>Public Functions / Methods</h3>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>open()</td>
+                                <td>Opens the Scotch Panel</td>
+                            </tr>
+                            <tr>
+                                <td>close()</td>
+                                <td>Closes the Scotch Panel</td>
+                            </tr>
+                            <tr>
+                                <td>toggle()</td>
+                                <td>Toggles the Scotch Panel (open or closed)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Project by Nicholas Cerminara</h4>
+                    <h5>More cool stuff at <a href="http://scotch.io" target="_blank">scotch.io</a></h5>
+                    <br>
+                    <h5><i class="fa fa-twitter" target="_blank"></i> Follow scotch.io on Twitter at <a href="https://twitter.com/scotch_io">@scotch_io</a></h5>
+                    <h5><i class="fa fa-twitter" target="_blank"></i> Follow me on Twitter at <a href="https://twitter.com/nickforthought">@nickforthought</a></h5>
+                </div>
+                <div class="col-md-4">
+                    <a href="http://scotch.io" target="_blank" class="logo"><img src="https://scotch.io/wp-content/themes/scotch-twentyfive/img/scotch-logo.png"></a>
+                </div>
+                <div class="col-md-4">
+                   <h4><a href="http://scotch.io" target="_blank">scotch.io, LLC</a> | &copy; 2014-2015</h4>
+                    <br>
+                    <br>
+                    <a href="#" class="btn btn-lg btn-danger">Purchase a License</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+    <script src="../dist/scotchPanels.js"></script>
+    <script src="power.js"></script>
+
+
+</body>
+</html>

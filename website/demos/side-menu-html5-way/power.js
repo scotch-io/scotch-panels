@@ -1,0 +1,5 @@
+$(function() {
+
+    $('#scotch-panel').scotchPanel();
+
+});

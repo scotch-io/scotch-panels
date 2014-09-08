@@ -1,0 +1,25 @@
+{
+  "name": "scotchPanels",
+  "version": "1.0.0",
+  "description": "scotchPanels.js is a jQuery plugin for easily creating [off canvas](http://scotch.io/tutorials/off-canvas-menus-with-css3-transitions-and-transforms) menus, navigations, and other panel types such as images, videos, and iframes. Scotch Panels are **featured-packed** and have a ton of different options for every skill-level to tweak and implement into almost any project. Scotch Panels work from **any** container so you can put your side navigation on any element you want. It even provides excellent backwards-compatible browser support via a JavaScript fallback. Lastly, there's over 30 stripped down code samples to get you up and running in no time.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scotch-io/scotch-panels"
+  },
+  "author": "Nicholas Cerminara <nick@scotch.io>",
+  "bugs": {
+    "url": "https://github.com/scotch-io/scotch-panels/issues"
+  },
+  "homepage": "https://github.com/scotch-io/scotch-panels",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "jshint-stylish": "^0.4.0",
+    "grunt-contrib-copy": "~0.5.0"
+  }
+}

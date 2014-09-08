@@ -1,0 +1,142 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/Product" id="ie6" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie7" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie8" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 9 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie9" class="ie" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 9]><!--><html itemscope itemtype="http://schema.org/Product" lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <!--
+       d888888o.       ,o888888o.        ,o888888o. 8888888 8888888888 ,o888888o.    8 8888        8
+     .`8888:' `88.    8888     `88.   . 8888     `88.     8 8888      8888     `88.  8 8888        8
+     8.`8888.   Y8 ,8 8888       `8. ,8 8888       `8b    8 8888   ,8 8888       `8. 8 8888        8
+     `8.`8888.     88 8888           88 8888        `8b   8 8888   88 8888           8 8888        8
+      `8.`8888.    88 8888           88 8888         88   8 8888   88 8888           8 8888        8
+       `8.`8888.   88 8888           88 8888         88   8 8888   88 8888           8 8888        8
+        `8.`8888.  88 8888           88 8888        ,8P   8 8888   88 8888           8 8888888888888
+    8b   `8.`8888. `8 8888       .8' `8 8888       ,8P    8 8888   `8 8888       .8' 8 8888        8
+    `8b.  ;8.`8888    8888     ,88'   ` 8888     ,88'     8 8888      8888     ,88'  8 8888        8
+     `Y8888P ,88P'     `8888888P'        `8888888P'       8 8888       `8888888P'    8 8888        8
+
+    8 888888888o      .8.          b.             8 8 8888888888   8 8888           d888888o.
+    8 8888    `88.   .888.         888o.          8 8 8888         8 8888         .`8888:' `88.
+    8 8888     `88  :88888.        Y88888o.       8 8 8888         8 8888         8.`8888.   Y8
+    8 8888     ,88 . `88888.       .`Y888888o.    8 8 8888         8 8888         `8.`8888.
+    8 8888.   ,88'.8. `88888.      8o. `Y888888o. 8 8 888888888888 8 8888          `8.`8888.
+    8 888888888P'.8`8. `88888.     8`Y8o. `Y88888o8 8 8888         8 8888           `8.`8888.
+    8 8888      .8' `8. `88888.    8   `Y8o. `Y8888 8 8888         8 8888            `8.`8888.
+    8 8888     .8'   `8. `88888.   8      `Y8o. `Y8 8 8888         8 8888        8b   `8.`8888.
+    8 8888    .888888888. `88888.  8         `Y8o.` 8 8888         8 8888        `8b.  ;8.`8888
+    8 8888   .8'       `8. `88888. 8            `Yo 8 888888888888 8 888888888888 `Y8888P ,88P'
+    -->
+    <title>Scotch Panels ♥ jQuery Off Canvas Menus and Panels Plugin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="http://scotch.io/favicon.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+
+    <article class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Build a Custom Slider</h1>
+                <p class="lead">To show the power behind ScotchPanel.js, this is a demo on how you <i>could</i> quickly build a completely custom and responsive slider with almost no work.</p>
+                <pre>
+                <code class="language-javascript">
+                /*==================================
+                =            LEFT SLIDE            =
+                ==================================*/
+                var leftPanel = $('.left-panel').scotchPanel({
+                    type: 'image',
+                    containerSelector: '#slider',
+                    duration: 500,
+                    transition: 'ease',
+                    distanceX: '100%',
+                    direction: 'left'
+                });
+                $('.open-left-panel').click(function() {
+                    leftPanel.open();
+                    return false;
+                });
+                $('.close-left-panel').click(function() {
+                    leftPanel.close();
+                    return false;
+                });
+
+
+                /*===================================
+                =            RIGHT SLIDE            =
+                ===================================*/
+                var rightPanel = $('.right-panel').scotchPanel({
+                    type: 'image',
+                    containerSelector: '#slider',
+                    duration: 500,
+                    transition: 'ease',
+                    distanceX: '100%',
+                    direction: 'right'
+                });
+                $('.open-right-panel').click(function() {
+                    rightPanel.open();
+                    return false;
+                });
+                $('.close-right-panel').click(function() {
+                    rightPanel.close();
+                    return false;
+                });
+                </code>
+                </pre>
+            </div>
+        </div>
+    </article>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div id="slider">
+                        <div class="left-panel scotch-panel" data-direction="left" data-imageURL="http://scotch.io/wp-content/themes/scotch-twentyfive/img/about-chris.jpg">
+                            <p>Chris Sevilleja</p>
+                        </div>
+                        <div class="center-panel scotch-panel">
+                            <p>Nicholas Cerminara</p>
+                        </div>
+                        <div class="right-panel scotch-panel" data-direction="right" data-imageURL="http://scotch.io/wp-content/themes/scotch-twentyfive/img/about-holly.jpg">
+                            <p>Holly Lloyd</p>
+                        </div>
+                    </div>
+                    <div class="slider-buttons">
+                        <a href="#" class="open-left-panel">Open Left Panel</a>
+                        <a href="#" class="close-left-panel close-right-panel">Go to Middle Panel</a>
+                        <a href="#" class="open-right-panel">Open Right Panel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+    <script src="../../../dist/scotchPanels.js"></script>
+    <script src="power.js"></script>
+
+</body>
+</html>

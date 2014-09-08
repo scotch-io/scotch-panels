@@ -1,0 +1,163 @@
+/*==================================
+=            SITE STUFF            =
+==================================*/
+a {
+    text-decoration: none !important;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+}
+header {
+    position: relative;
+    background: #222;
+    height: 50px;
+}
+header a {
+    color: #777;
+}
+header a:hover {
+    color: #fff;
+}
+header .logo {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+header .toggle-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #333;
+}
+article {
+    height: 5000px;
+}
+
+
+
+
+/*====================================
+=            PANEL STYLES            =
+====================================*/
+#scotch-panel {
+    -webkit-transform: translateZ(0);
+}
+#scotch-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: #444;
+    height: 100%;
+}
+.scotch-is-showing #scotch-panel ul li {
+    display: none;
+}
+.scotch-is-showing #scotch-panel ul li {
+    display: block;
+   -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+}
+#scotch-panel ul li a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: transparent;
+    color: #fff;
+}
+#scotch-panel ul li a:hover {
+    background: #555;
+}
+
+
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.55, 0.75, 1);
+    transform: scale3d(1.55, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.25, 1.25, 1);
+    transform: scale3d(0.25, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.55, 0.75, 1);
+    -ms-transform: scale3d(1.55, 0.75, 1);
+    transform: scale3d(1.55, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.25, 1.25, 1);
+    -ms-transform: scale3d(0.25, 1.25, 1);
+    transform: scale3d(0.25, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    -ms-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    -ms-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    -ms-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

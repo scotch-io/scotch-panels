@@ -1,0 +1,43 @@
+/*==================================
+=            SITE STUFF            =
+==================================*/
+a {
+    text-decoration: none !important;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+}
+section {
+    margin-bottom: 5000px;
+}
+
+
+
+
+
+
+
+#super-container {
+    background: #e3e3e3;
+    text-align: center;
+}
+#super-container a {
+    padding: 25px;
+    display: block;
+}
+
+.scotch-panel {
+    background: #444;
+}
+.scotch-panel h2 {
+    margin: 0;
+    color: #fff;
+    padding: 20px;
+}
+#super-container a {
+    color: #222;
+    background: transparent;
+}
+#super-container a:hover {
+    background: #737373;
+}

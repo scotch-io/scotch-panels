@@ -1,0 +1,100 @@
+/*==================================
+=            SITE STUFF            =
+==================================*/
+body {
+    background: #e3e3e3;
+}
+a {
+    text-decoration: none !important;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+}
+header {
+    position: relative;
+    background: #222;
+    height: 50px;
+}
+header a {
+    color: #777;
+}
+header a:hover {
+    color: #fff;
+}
+header .logo {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+header .toggle-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #333;
+}
+article {
+    height: 5000px;
+}
+.scotch-panel-canvas {
+    background: #fff;
+}
+
+
+
+
+
+
+/*==================================
+=            CSS LOADER            =
+==================================*/
+.loader {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 5%;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-top-color: #1cf2aa;
+    border-right-color: #1cf2aa;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-animation: rotate 500ms ease-in-out infinite;
+    animation: rotate 500ms ease-in-out infinite;
+    -webkit-transform: rotate(-200deg);
+    -ms-transform: rotate(-200deg);
+    transform: rotate(-200deg);
+}
+@-webkit-keyframes rotate {
+  0% { border-width: 10px; }
+  25% { border-width: 3px; }
+  50% {
+    -webkit-transform: rotate(115deg);
+    transform: rotate(115deg);
+    border-width: 10px;
+  }
+  75% { border-width: 3px;}
+  100% { border-width: 10px;}
+}
+@keyframes rotate {
+  0% { border-width: 10px; }
+  25% { border-width: 3px; }
+  50% {
+    -webkit-transform: rotate(115deg);
+    transform: rotate(115deg);
+    border-width: 10px;
+  }
+  75% { border-width: 3px;}
+  100% { border-width: 10px;}
+}
+
+

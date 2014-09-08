@@ -1,0 +1,64 @@
+/*==================================
+=            SITE STUFF            =
+==================================*/
+a {
+    text-decoration: none !important;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+}
+section {
+    margin-bottom: 5000px;
+}
+
+
+
+
+
+
+
+/*====================================
+=            SLIDER STUFF            =
+====================================*/
+.scotch-panel {
+    display: block;
+    height: 400px;
+}
+.center-panel {
+    background-image: url('http://scotch.io/wp-content/themes/scotch-twentyfive/img/about-nickie.jpg');
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+}
+.scotch-panel p {
+    position: absolute;
+    top: 75%;
+    background: #000;
+    background: rgba(0, 0, 0, 0.75);
+    margin: 0;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+}
+.slider-buttons {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.slider-buttons a {
+    display: inline-block;
+    height: 20px;
+    width: 25%;
+    text-indent: -99999999em;
+    background: #777;
+    margin: 2%;
+}
+.slider-buttons a:hover {
+    background: #333;
+}

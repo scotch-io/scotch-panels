@@ -1,0 +1,65 @@
+/*==================================
+=            SITE STUFF            =
+==================================*/
+a {
+    text-decoration: none !important;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+}
+header {
+    position: relative;
+    background: #222;
+    height: 50px;
+}
+header a {
+    color: #777;
+}
+header a:hover {
+    color: #fff;
+}
+header .logo {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+header .toggle-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #333;
+}
+article {
+    height: 5000px;
+}
+
+
+
+
+/*====================================
+=            PANEL STYLES            =
+====================================*/
+#scotch-panel {
+    background: #46AAF2;
+}
+#scotch-panel h2 {
+    color: #9ED1FF;
+    padding: 20px 0 0;
+}
+#scotch-panel form {
+    padding: 20px 0 40px;
+}
+#scotch-panel label {
+    color: #9ED1FF;
+}
+
+#scotch-panel .toggle-panel {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
