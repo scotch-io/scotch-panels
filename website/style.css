@@ -288,6 +288,7 @@ a.toggle-nested-demo i {
 #call-to-action .button-panel {
     background: #00FFAD;
     color: rgb(5, 31, 60);
+    font-size: 11px;
 }
 #call-to-action small {
     font-size: 14px;
@@ -679,6 +680,26 @@ a.toggle-nested-demo i {
 #options table {
     margin-bottom: 50px;
 }
+
+
+
+
+/*=================================
+=            REMINDERS            =
+=================================*/
+#reminder {
+    text-align: center;
+}
+#reminder h2 {
+    margin-bottom: 30px;
+}
+#reminder a {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    max-width: 200px;
+}
+
 
 
 

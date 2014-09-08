@@ -82,11 +82,11 @@ $(function() {
 
 
     $('.download-only').click(function() {
-        window.location.href = "http://google.com";
+        window.location.href = 'https://github.com/scotch-io/scotch-panels/archive/master.zip';
     });
 
     $('.github-only').click(function() {
-        window.location.href = "http://bing.com";
+        window.location.href = 'https://github.com/scotch-io';
     });
 
 });
