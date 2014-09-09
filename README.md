@@ -2,6 +2,9 @@
 
 scotchPanels.js is a jQuery plugin for easily creating [off canvas](http://scotch.io/tutorials/off-canvas-menus-with-css3-transitions-and-transforms) menus, navigations, and other panel types such as images, videos, and iframes. Scotch Panels are **featured-packed** and have a ton of different options for every skill-level to tweak and implement into almost any project. Scotch Panels work from **any** container so you can put your side navigation on any element you want. It even provides excellent backwards-compatible browser support via a JavaScript fallback. Lastly, there's over 30 stripped down code samples to get you up and running in no time.
 
+***
+
+
 
 ## Licenses
 
@@ -11,74 +14,79 @@ Commercial (1 site) | $15
 Commercial (Unlimited Sites)  | $60
 Extended License (reselling)  | Contact me: nick@scotch.io
 
+***
+
+
 ## Dead Simple Demos
 
 ### Getting Started
-[Side Menu - Easy Way](http://panels.scotch.io/demos/side-menu-easy-way/index.html)
-[Side Menu - HTML5 Way](http://panels.scotch.io/demos/side-menu-html5-way/index.html)
-[Side Menu - Dev Way](http://panels.scotch.io/demos/side-menu-dev-way/index.html)
+- [Side Menu - Easy Way](http://panels.scotch.io/demos/side-menu-easy-way/index.html)
+- [Side Menu - HTML5 Way](http://panels.scotch.io/demos/side-menu-html5-way/index.html)
+- [Side Menu - Dev Way](http://panels.scotch.io/demos/side-menu-dev-way/index.html)
 
 
 ### Mobile Only
-[Side Menu Mobile Only - with CSS](http://panels.scotch.io/demos/side-menu-mobile-only-with-css/index.html)
-[Side Menu Mobile Only - with JS](http://panels.scotch.io/demos/side-menu-mobile-only-with-js/index.html)
+- [Side Menu Mobile Only - with CSS](http://panels.scotch.io/demos/side-menu-mobile-only-with-css/index.html)
+- [Side Menu Mobile Only - with JS](http://panels.scotch.io/demos/side-menu-mobile-only-with-js/index.html)
 
 
 ### Horizontal
-[Horizontal Fixed Width](http://panels.scotch.io/demos/horizontal-fixed-width/index.html)
-[Horizontal Percentage Width](http://panels.scotch.io/demos/horizontal-percentage-width/index.html)
+- [Horizontal Fixed Width](http://panels.scotch.io/demos/horizontal-fixed-width/index.html)
+- [Horizontal Percentage Width](http://panels.scotch.io/demos/horizontal-percentage-width/index.html)
 
 
 ### Vertical
-[Vertical Min Height](http://panels.scotch.io/demos/vertical-min-height/index.html)
+- [Vertical Min Height](http://panels.scotch.io/demos/vertical-min-height/index.html)
 
 
 ### Content Helpers
-[HTML](http://panels.scotch.io/demos/html-example/index.html)
-[Iframe](http://panels.scotch.io/demos/iframe-example-no-loader/index.html)
-[Iframe with Loader](http://panels.scotch.io/demos/iframe-example-with-loader/index.html)
-[Photo](http://panels.scotch.io/demos/photo-example/index.html)
-[Video](http://panels.scotch.io/demos/video-example/index.html)
+- [HTML](http://panels.scotch.io/demos/html-example/index.html)
+- [Iframe](http://panels.scotch.io/demos/iframe-example-no-loader/index.html)
+- [Iframe with Loader](http://panels.scotch.io/demos/iframe-example-with-loader/index.html)
+- [Photo](http://panels.scotch.io/demos/photo-example/index.html)
+- [Video](http://panels.scotch.io/demos/video-example/index.html)
 
 
 ### Event Helpers
-[Click](http://panels.scotch.io/demos/click-helper/index.html)
-[Hover](http://panels.scotch.io/demos/hover-helper/index.html)
-[Touch](http://panels.scotch.io/demos/touch-helper/index.html)
+- [Click](http://panels.scotch.io/demos/click-helper/index.html)
+- [Hover](http://panels.scotch.io/demos/hover-helper/index.html)
+- [Touch](http://panels.scotch.io/demos/touch-helper/index.html)
 
 
 ### Styles
-[Transitions](http://panels.scotch.io/demos/transitions/index.html)
-[Durations](http://panels.scotch.io/demos/durations/index.html)
-[Directions](http://panels.scotch.io/demos/directions/index.html)
+- [Transitions](http://panels.scotch.io/demos/transitions/index.html)
+- [Durations](http://panels.scotch.io/demos/durations/index.html)
+- [Directions](http://panels.scotch.io/demos/directions/index.html)
 
 
 ### Triggers
-[Trigger Example](http://panels.scotch.io/demos/trigger-example/index.html)
-[Trigger - Close after "X"](http://panels.scotch.io/demos/trigger-close-after-x/index.html)
-[Trigger - With Cookie](http://panels.scotch.io/demos/trigger-with-cookie/index.html)
+- [Trigger Example](http://panels.scotch.io/demos/trigger-example/index.html)
+- [Trigger - Close after "X"](http://panels.scotch.io/demos/trigger-close-after-x/index.html)
+- [Trigger - With Cookie](http://panels.scotch.io/demos/trigger-with-cookie/index.html)
 
 
 ### CSS Class Helpers
-[CSS Helper Classes](http://panels.scotch.io/demos/helper-classes/index.html)
+- [CSS Helper Classes](http://panels.scotch.io/demos/helper-classes/index.html)
 
 
 ### Browser Suport
-[JavaScript Only](http://panels.scotch.io/demos/javascript-only/index.html)
-[JavaScript Only with Easing](http://panels.scotch.io/demos/javascript-only-with-easing/index.html)
+- [JavaScript Only](http://panels.scotch.io/demos/javascript-only/index.html)
+- [JavaScript Only with Easing](http://panels.scotch.io/demos/javascript-only-with-easing/index.html)
 
 
 ### Multiple Panels at Once
-[Multiple Panels](http://panels.scotch.io/demos/multiple-panels/index.html)
-[Multiple Panels - different styles](http://panels.scotch.io/demos/multiple-panels-different-styles/index.html)
-[Multiple Panels - same container](http://panels.scotch.io/demos/multiple-panels-same-container/index.html)
+- [Multiple Panels](http://panels.scotch.io/demos/multiple-panels/index.html)
+- [Multiple Panels - different styles](http://panels.scotch.io/demos/multiple-panels-different-styles/index.html)
+- [Multiple Panels - same container](http://panels.scotch.io/demos/multiple-panels-same-container/index.html)
 
 
 ### Advanced (cool things)
-[Custom Slider](http://panels.scotch.io/demos/custom-slider/index.html)
-[Callbacks](http://panels.scotch.io/demos/callbacks/index.html)
-[Loading Buttons](http://panels.scotch.io/demos/loading-buttons/index.html)
-[Nested Panels](http://panels.scotch.io/demos/nested-panels/index.html)
+- [Custom Slider](http://panels.scotch.io/demos/custom-slider/index.html)
+- [Callbacks](http://panels.scotch.io/demos/callbacks/index.html)
+- [Loading Buttons](http://panels.scotch.io/demos/loading-buttons/index.html)
+- [Nested Panels](http://panels.scotch.io/demos/nested-panels/index.html)
+
+***
 
 
 ## Other Features
@@ -97,7 +105,12 @@ Extended License (reselling)  | Contact me: nick@scotch.io
 - Extensive Callbacks API
 - Click, touch, hover, and keyboard helpers
 - CSS Class Helpers
-- 
+
+
+***
+ 
+
+
 ## GETTING STARTED THE EASY WAY
 
 ### Add scotchPanels.js
@@ -143,6 +156,7 @@ $('#panel-example').scotchPanel({
 });
 ```
 
+***
 
 
 
@@ -187,6 +201,7 @@ panelExample.toggle() // Toggles the Panel
 panelExample.close() // Closes the Panel
 ```
 
+***
 
 
 ## Getting Started the HTML5 Way
@@ -229,6 +244,10 @@ $('.panelize-meeeee').scotchPanel({
 });
 
 ```
+
+
+***
+
 
 
 ## Issues or Bugs
