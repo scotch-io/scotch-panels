@@ -86,7 +86,7 @@ $(function() {
     });
 
     $('.github-only').click(function() {
-        window.location.href = 'https://github.com/scotch-io';
+        window.location.href = 'https://github.com/scotch-io/scotch-panels';
     });
 
 });
