@@ -1,0 +1,37 @@
+{
+    "name": "scotchPanels",
+    "title": "Scotch Panels",
+    "description": "Dead simple Off Canvas jQuery Plugin.",
+    "keywords": [
+        "off-canvas",
+        "css3",
+        "mobile-menu",
+        "mobile-nav",
+        "side-nav",
+        "side-menu"
+    ],
+    "version": "1.0.2",
+    "author": {
+        "name": "Nicholas Cerminara",
+        "url": "https://github.com/scotch-io/scotch-panels"
+    },
+    "maintainers": [
+        {
+            "name": "Nicholas Cerminara",
+            "email": "nick@scotch.io",
+            "url": "https://github.com/scotch-io"
+        }
+    ],
+    "licenses": [
+        {
+            "url": "http://shop.scotch.io/collections/frontpage/products/scotchpanels-js-commercial-license"
+        }
+    ],
+    "bugs": "https://github.com/scotch-io/Scotch-Panels/issues",
+    "homepage": "http://panels.scotch.io",
+    "docs": "http://panels.scotch.io",
+    "download": "https://github.com/scotch-io/scotch-panels/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
