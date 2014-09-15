@@ -5,6 +5,9 @@
     "Nick Cerminara <nick@scotch.io>"
   ],
   "homepage": "https://github.com:scotch-io/scotch-panels",
+  "main": [
+    "./dist/scotchPanels.min.js"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
