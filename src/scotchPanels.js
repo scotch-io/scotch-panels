@@ -1,9 +1,3 @@
-/*
- * scotchPanels - v1.0.3 - 2014-09-02
- * https://github.com/scotch-io/scotch-panels
- * Copyright (c) 2014 Nicholas Cerminara <nick@scotch.io>
- */
-
 // Start with Semicolon to block
 ;(function($) {
 
