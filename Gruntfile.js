@@ -4,6 +4,18 @@ module.exports = function(grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
+        concat: {
+          options: {
+            banner: '/*\n* <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> \n' +
+                '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
+                '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %> \n*/\n'
+          }, 
+          build: {
+            src: 'src/scotchPanels.js',
+            dest: 'dist/scotchPanels.js'
+          }
+        },
+
         // configure jshint to validate js files -----------------------------------
         jshint: {
           options: {
@@ -21,7 +33,7 @@ module.exports = function(grunt) {
           }, 
           build: {
             files: {
-              'dist/scotchPanels.min.js': 'src/scotchPanels.js'
+              'dist/scotchPanels.min.js': 'dist/scotchPanels.js'
             }
           }
         },
@@ -30,16 +42,17 @@ module.exports = function(grunt) {
         watch: {
           scripts: {
             files: 'src/*.js',
-            tasks: ['uglify']
+            tasks: ['concat', 'uglify']
           }
         }
 
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['uglify']);
+    grunt.registerTask('default', ['concat', 'uglify']);
 
 };

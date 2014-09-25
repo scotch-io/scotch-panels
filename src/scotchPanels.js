@@ -1,9 +1,3 @@
-/*
- * scotchPanels - v1.0.3 - 2014-09-02
- * https://github.com/scotch-io/scotch-panels
- * Copyright (c) 2014 Nicholas Cerminara <nick@scotch.io>
- */
-
 // Start with Semicolon to block
 ;(function($) {
 
@@ -238,11 +232,11 @@
                 });
             }
             panel.css({
-                '-moz-transform': 'translateZ(0)',
-                '-ms-transform': 'translateZ(0)',
-                '-o-transform': 'translateZ(0)',
-                '-webkit-transform': 'translateZ(0)',
-                'transform': 'translateZ(0)'
+                '-moz-backface-visibility': 'hidden',
+                '-ms-backface-visibility': 'hidden',
+                '-o-backface-visibility': 'hidden',
+                '-webkit-backface-visibility': 'hidden',
+                'backface-visibility': 'hidden'
             });
 
             // Photo Logic
