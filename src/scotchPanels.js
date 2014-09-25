@@ -232,7 +232,6 @@
                 });
             }
             panel.css({
-                'transform': 'translate3d(0, 0, 0)',
                 '-moz-backface-visibility': 'hidden',
                 '-ms-backface-visibility': 'hidden',
                 '-o-backface-visibility': 'hidden',
