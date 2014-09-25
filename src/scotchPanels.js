@@ -1,3 +1,9 @@
+/*
+ * scotchPanels - v1.0.3 - 2014-09-02
+ * https://github.com/scotch-io/scotch-panels
+ * Copyright (c) 2014 Nicholas Cerminara <nick@scotch.io>
+ */
+
 // Start with Semicolon to block
 ;(function($) {
 
@@ -63,7 +69,7 @@
         afterPanelOpen: function() {},
         beforePanelClose: function() {},
         afterPanelClose: function() {}
-    }
+    };
 
 
     $.fn.scotchPanel = function(options) {
@@ -74,7 +80,7 @@
         }
 
         // Check to see if an element is even selected
-        if (this.length == 0) return this;
+        if (this.length === 0) return this;
 
         // Support selecting Panels
         if (this.length > 1) {
@@ -90,17 +96,17 @@
                 for (var i = 0; i < panels.length; i++) {
                     panels[i].open();
                 }
-            }
+            };
             panels.close = function() {
                 for (var i = 0; i < panels.length; i++) {
                     panels[i].close();
                 }
-            }
+            };
             panels.toggle = function() {
                 for (var i = 0; i < panels.length; i++) {
                     panels[i].toggle();
                 }
-            }
+            };
 
             // Return the Scotch Panels
             return panels;
@@ -138,7 +144,7 @@
 
             // Start DOM and CSS Modifications
             setup();
-        }
+        };
 
 
         // DOM / CSS Changes / Make Things Happen
@@ -162,14 +168,14 @@
                 'height': '100%',
                 'width': '100%'
             });
-            // Do 3D Stuff separate (Chrome position: fixed bug)
+            // Do 3D Stuff separate
             if (panel.settings.useCSS) {
                 $('.scotch-panel-canvas').css({
-                     '-moz-transform': 'translate3d(0, 0, 0) scale(1, 1, 1)',
-                    '-ms-transform': 'translate3d(0, 0, 0) scale(1, 1, 1)',
-                    '-o-transform': 'translate3d(0, 0, 0) scale(1, 1, 1)',
-                    '-webkit-transform': 'translate3d(0, 0, 0) scale(1, 1, 1)',
-                    'transform': 'translate3d(0, 0, 0) scale(1, 1, 1)',
+                    '-moz-transform': 'translate3d(0, 0, 0)',
+                    '-ms-transform': 'translate3d(0, 0, 0)',
+                    '-o-transform': 'translate3d(0, 0, 0)',
+                    '-webkit-transform': 'translate3d(0, 0, 0)',
+                    'transform': 'translate3d(0, 0, 0)',
                     '-moz-backface-visibility': 'hidden',
                     '-ms-backface-visibility': 'hidden',
                     '-o-backface-visibility': 'hidden',
@@ -231,6 +237,13 @@
                     'overflow': 'hidden'
                 });
             }
+            panel.css({
+                '-moz-transform': 'translateZ(0)',
+                '-ms-transform': 'translateZ(0)',
+                '-o-transform': 'translateZ(0)',
+                '-webkit-transform': 'translateZ(0)',
+                'transform': 'translateZ(0)'
+            });
 
             // Photo Logic
             if (panel.settings.type == 'image' && panel.settings.imageURL) {
@@ -255,7 +268,7 @@
             // Iframe Logic
             if (panel.settings.type == 'iframe' && panel.settings.iframeURL) {
                 panel.iframeIsLoaded = false;
-                panel.append('<iframe frameborder="0" style="width: 100%; height: 100%; display: block; position: relative; min-height: '+panel.settings.minHeight+'" allowfullscreen></iframe>')
+                panel.append('<iframe frameborder="0" style="width: 100%; height: 100%; display: block; position: relative; min-height: '+panel.settings.minHeight+'" allowfullscreen></iframe>');
 
                 // Update Panel Height if top or bottom
                 if (panel.settings.direction == 'top' || panel.settings.direction == 'bottom') {
@@ -291,7 +304,7 @@
                     panel.close();
                 }, panel.settings.closeAfter);
             }
-        }
+        };
 
 
         // Browser Support Object
@@ -336,9 +349,9 @@
                     return has3d !== 'none';
                 } else {
                     return false;
-                };
+                }
             }
-        }
+        };
 
         // Toggle YouTube State (Play / Pause)
         var toggleVideoState = function(element, state) {
@@ -348,7 +361,7 @@
             var func = state == 'hide' ? 'pauseVideo' : 'playVideo';
             iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
             div.style['display'] = 'block';
-        }
+        };
 
         // Apply CSS Transitions
         var applyTransition = function(transition, duration) {
@@ -359,7 +372,7 @@
                 '-webkit-transition': 'all '+duration+'ms '+transition,
                 'transition': 'all '+duration+'ms '+transition
             });
-        }
+        };
 
         // Toggle Translate Y
         var translateY = function(distanceY) {
@@ -443,7 +456,7 @@
 
                 }
             }
-        }
+        };
 
         // Toggle Translate X
         var translateX = function(distanceX) {
@@ -521,7 +534,7 @@
 
                 }
             }
-        }
+        };
 
 
         /*========================================
@@ -557,7 +570,7 @@
             if (panel.settings.direction == 'right') {
                 translateX('-' + panel.settings.distanceX);
             }
-        }
+        };
 
         // Close ScotchPanel
         panel.close = function() {
@@ -577,7 +590,7 @@
             if (panel.settings.direction == 'left' || panel.settings.direction == 'right') {
                 translateX(0);
             }
-        }
+        };
 
         // Toggle ScotchPanel
         panel.toggle = function() {
@@ -586,7 +599,7 @@
             } else {
                 panel.open();
             }
-        }
+        };
 
 
 
@@ -639,8 +652,6 @@
 
         // Return the Scotch Panel Object so Devs can do cool things with it
         return panel;
-    }
+    };
 
 }(jQuery));
-
-
