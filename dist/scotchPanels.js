@@ -168,14 +168,14 @@
                 'height': '100%',
                 'width': '100%'
             });
-            // Do 3D Stuff separate (Chrome position: fixed bug)
+            // Do 3D Stuff separate
             if (panel.settings.useCSS) {
                 $('.scotch-panel-canvas').css({
-                     '-moz-transform': 'translate3d(0, 0, 0) scale(1, 1, 1)',
-                    '-ms-transform': 'translate3d(0, 0, 0) scale(1, 1, 1)',
-                    '-o-transform': 'translate3d(0, 0, 0) scale(1, 1, 1)',
-                    '-webkit-transform': 'translate3d(0, 0, 0) scale(1, 1, 1)',
-                    'transform': 'translate3d(0, 0, 0) scale(1, 1, 1)',
+                    '-moz-transform': 'translate3d(0, 0, 0)',
+                    '-ms-transform': 'translate3d(0, 0, 0)',
+                    '-o-transform': 'translate3d(0, 0, 0)',
+                    '-webkit-transform': 'translate3d(0, 0, 0)',
+                    'transform': 'translate3d(0, 0, 0)',
                     '-moz-backface-visibility': 'hidden',
                     '-ms-backface-visibility': 'hidden',
                     '-o-backface-visibility': 'hidden',
@@ -237,6 +237,13 @@
                     'overflow': 'hidden'
                 });
             }
+            panel.css({
+                '-moz-transform': 'translateZ(0)',
+                '-ms-transform': 'translateZ(0)',
+                '-o-transform': 'translateZ(0)',
+                '-webkit-transform': 'translateZ(0)',
+                'transform': 'translateZ(0)'
+            })
 
             // Photo Logic
             if (panel.settings.type == 'image' && panel.settings.imageURL) {
