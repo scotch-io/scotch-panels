@@ -232,11 +232,12 @@
                 });
             }
             panel.css({
-                '-moz-transform': 'translateZ(0)',
-                '-ms-transform': 'translateZ(0)',
-                '-o-transform': 'translateZ(0)',
-                '-webkit-transform': 'translateZ(0)',
-                'transform': 'translateZ(0)'
+                'transform': 'translate3d(0, 0, 0)',
+                '-moz-backface-visibility': 'hidden',
+                '-ms-backface-visibility': 'hidden',
+                '-o-backface-visibility': 'hidden',
+                '-webkit-backface-visibility': 'hidden',
+                'backface-visibility': 'hidden'
             });
 
             // Photo Logic
