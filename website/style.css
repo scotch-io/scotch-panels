@@ -187,7 +187,7 @@ th {
 #call-to-action {
     background: #0f1a32;
     text-align: center;
-    min-height: 600px !important;
+    min-height: 800px !important;
 }
 #call-to-action a.toggle-nav {
     position: absolute;
@@ -426,9 +426,15 @@ a.toggle-nested-demo i {
 }
 #direction-content .toggle-direction-content-iframe {
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: 0;
     z-index: 999999;
+    width: 50%;
+    -webkittransform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 #direction-content .toggle-direction-content-image {
     position: absolute;
