@@ -272,7 +272,7 @@
 
             // YouTube Logic
             if (panel.settings.type == 'video' && panel.settings.youtubeID) {
-                panel.append('<div id="video-id-'+panel.settings.youtubeID+'" style="min-height: '+panel.settings.minHeight+'; display: block !important;"><iframe src="http://www.youtube.com/embed/'+panel.settings.youtubeID+'?enablejsapi=1&theme='+panel.settings.youTubeTheme+'" frameborder="0" style="width: 100%; height: 100%; display: block; position: absolute; left: 0; top: 0;" allowfullscreen></iframe></div>');
+                panel.append('<div id="video-id-'+panel.settings.youtubeID+'" style="min-height: '+panel.settings.minHeight+'; display: block !important;"><iframe src="//www.youtube.com/embed/'+panel.settings.youtubeID+'?enablejsapi=1&theme='+panel.settings.youTubeTheme+'" frameborder="0" style="width: 100%; height: 100%; display: block; position: absolute; left: 0; top: 0;" allowfullscreen></iframe></div>');
 
                 // Update Panel Height if top or bottom
                 if (panel.settings.direction == 'top' || panel.settings.direction == 'bottom') {

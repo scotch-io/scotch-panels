@@ -26,7 +26,7 @@ $(function() {
         containerSelector: '#direction-content .content',
         direction: 'top',
         type: 'iframe',
-        iframeURL: 'http://scotch.io',
+        iframeURL: 'https://scotch.io',
         clickSelector: '#direction-content .arrows .top, .toggle-direction-content-iframe',
         touchSelector: '#direction-content .arrows .top, .toggle-direction-content-iframe'
     });
@@ -34,7 +34,7 @@ $(function() {
         containerSelector: '#direction-content .content',
         direction: 'bottom',
         type: 'image',
-        imageURL: 'http://scotch.io/wp-content/themes/scotch-twentyfive/img/about-holly.jpg',
+        imageURL: 'https://scotch.io/wp-content/themes/scotch-twentyfive/img/about-holly.jpg',
         clickSelector: '#direction-content .arrows .bottom, .toggle-direction-content-image',
         touchSelector: '#direction-content .arrows .bottom, .toggle-direction-content-image'
     });
