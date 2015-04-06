@@ -1,6 +1,6 @@
 # scotchPanels.js - jQuery Off Canvas Menus and Panels Plugin
 
-![scotchPanel.js](http://scotch.io/wp-content/uploads/2014/09/scotch-panels-cover.jpg)
+![scotchPanel.js](https://cask.scotch.io/2014/09/scotch-panels-cover.jpg)
 
 - [Blog Post](http://scotch.io/bar-talk/scotchpanels-js-dead-simple-off-canvas-jquery-plugin)
 - [Docs](http://panels.scotch.io)
