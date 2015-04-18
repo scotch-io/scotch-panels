@@ -47,6 +47,12 @@ th {
     color: #333;
 }
 
+.make-me-a-panel,
+.button-panel { display: none !important; }
+.scotchified .make-me-a-panel,
+.scotchified .button-panel { display: block !important; }
+
+
 
 
 

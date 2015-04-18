@@ -34,7 +34,7 @@ $(function() {
         containerSelector: '#direction-content .content',
         direction: 'bottom',
         type: 'image',
-        imageURL: 'https://scotch.io/wp-content/themes/scotch-twentyfive/img/about-holly.jpg',
+        imageURL: 'https://panels.scotch.io/img/about-holly.jpeg',
         clickSelector: '#direction-content .arrows .bottom, .toggle-direction-content-image',
         touchSelector: '#direction-content .arrows .bottom, .toggle-direction-content-image'
     });
