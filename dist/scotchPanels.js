@@ -1,7 +1,7 @@
 /*
-* scotchPanels - v1.0.3 - 2014-09-25
+* scotchPanels - v1.0.3 - 2016-01-25 
 * https://github.com/scotch-io/scotch-panels
-* Copyright (c) 2014 Nicholas Cerminara <nick@scotch.io>
+* Copyright (c) 2016 Nicholas Cerminara <nick@scotch.io> 
 */
 // Start with Semicolon to block
 ;(function($) {
@@ -156,20 +156,20 @@
             }
 
             // Scotch Panel Wrapper CSS
-            $('.scotch-panel-wrapper').css({
+            $('.scotch-panel-wrapper', container).css({
                 'position': 'relative',
                 'overflow': 'hidden',
                 'width': '100%'
             });
             // Scotch Panel Canvas CSS
-            $('.scotch-panel-canvas').css({
+            $('.scotch-panel-canvas', container).css({
                 'position': 'relative',
                 'height': '100%',
                 'width': '100%'
             });
             // Do 3D Stuff separate
             if (panel.settings.useCSS) {
-                $('.scotch-panel-canvas').css({
+                $('.scotch-panel-canvas', container).css({
                     '-moz-transform': 'translate3d(0, 0, 0)',
                     '-ms-transform': 'translate3d(0, 0, 0)',
                     '-o-transform': 'translate3d(0, 0, 0)',
