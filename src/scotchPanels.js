@@ -62,7 +62,8 @@
         beforePanelOpen: function() {},
         afterPanelOpen: function() {},
         beforePanelClose: function() {},
-        afterPanelClose: function() {}
+        afterPanelClose: function() {},
+        panelInit: function() {}
     };
 
 
@@ -602,6 +603,7 @@
         =            MAKE MAGIC HAPPEN            =
         =========================================*/
         init();
+        panel.settings.panelInit();
 
 
 

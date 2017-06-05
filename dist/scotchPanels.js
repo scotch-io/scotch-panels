@@ -1,7 +1,7 @@
 /*
-* scotchPanels - v1.0.3 - 2014-09-25
+* scotchPanels - v1.0.3 - 2017-06-05 
 * https://github.com/scotch-io/scotch-panels
-* Copyright (c) 2014 Nicholas Cerminara <nick@scotch.io>
+* Copyright (c) 2017 Nicholas Cerminara <nick@scotch.io> 
 */
 // Start with Semicolon to block
 ;(function($) {
@@ -67,7 +67,8 @@
         beforePanelOpen: function() {},
         afterPanelOpen: function() {},
         beforePanelClose: function() {},
-        afterPanelClose: function() {}
+        afterPanelClose: function() {},
+        panelInit: function() {}
     };
 
 
@@ -607,6 +608,7 @@
         =            MAKE MAGIC HAPPEN            =
         =========================================*/
         init();
+        panel.settings.panelInit();
 
 
 
