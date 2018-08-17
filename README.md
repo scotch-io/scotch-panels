@@ -1,4 +1,4 @@
-# scotchPanels.js - jQuery Off Canvas Menus and Panels Plugin
+# Project: scotchPanels.js - jQuery Off Canvas Menus and Panels Plugin
 
 ![scotchPanel.js](https://cask.scotch.io/2014/09/scotch-panels-cover.jpg)
 
