@@ -536,7 +536,7 @@
         ========================================*/
         // Open the Scotch Panel
         panel.open = function() {
-            panel.parents('.scotch-panel-canvas:first').addClass('scotch-is-showing');
+            panel.addClass('scotch-panel-open').parents('.scotch-panel-canvas:first').addClass('scotch-is-showing');
 
             // Load iframe if not loaded
             if (panel.settings.type == 'iframe' && panel.settings.iframeURL && !panel.iframeIsLoaded) {
@@ -568,7 +568,7 @@
 
         // Close ScotchPanel
         panel.close = function() {
-            panel.parents('.scotch-panel-canvas:first').removeClass('scotch-is-showing');
+            panel.removeClass('scotch-panel-open').parents('.scotch-panel-canvas:first').removeClass('scotch-is-showing');
 
             // Pause YouTube Video (after close...)
             setTimeout(function(){
